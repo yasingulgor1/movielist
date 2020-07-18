@@ -1,0 +1,17 @@
+<div style="background-color: rgba(0,0,0,.03);" class="card" [ngClass]="{'mt-2': movie.id != 1}" *ngFor="let movie of movielist">
+    <div class="card-body p-0">
+        <div class="row">
+            <div class="col-4">
+                <img class="img-fluid" src="assets/img/{{movie.img_url}}">
+            </div>
+            <div class="col-8 pt-2">
+                <h5><a routerLink="/detail/{{movie.id}}">{{movie.moviename}}</a></h5>
+                <p  class="card-text">{{movie.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h5> Get Element By ID : {{movie.moviename}} </h5>
+</div>

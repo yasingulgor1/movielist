@@ -1,0 +1,9 @@
+<div class="card" *ngIf="loggingService.message.length > 0">
+    <div class="card-body">
+        
+        <p *ngFor="let item of loggingService.message">
+            {{item}}
+        </p>
+    
+    </div>
+</div>
